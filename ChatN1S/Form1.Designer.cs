@@ -1,6 +1,6 @@
 ﻿namespace ChatN1S
 {
-    partial class Form1
+    partial class ChatServer
     {
         /// <summary>
         /// 필수 디자이너 변수입니다.
@@ -111,7 +111,7 @@
             this.txtStatus.Size = new System.Drawing.Size(598, 464);
             this.txtStatus.TabIndex = 7;
             // 
-            // Form1
+            // ChatServer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -124,8 +124,8 @@
             this.Controls.Add(this.txtPort);
             this.Controls.Add(this.txtIP);
             this.Controls.Add(this.btnSend);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "ChatServer";
+            this.Text = "ChatServer";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

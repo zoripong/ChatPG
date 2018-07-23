@@ -36,6 +36,8 @@
             this.txtPort = new System.Windows.Forms.TextBox();
             this.txtIP = new System.Windows.Forms.TextBox();
             this.btnSend = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtName = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // txtStatus
@@ -58,7 +60,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(277, 18);
+            this.label2.Location = new System.Drawing.Point(169, 18);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(27, 12);
             this.label2.TabIndex = 13;
@@ -85,16 +87,16 @@
             // 
             // txtPort
             // 
-            this.txtPort.Location = new System.Drawing.Point(310, 12);
+            this.txtPort.Location = new System.Drawing.Point(202, 12);
             this.txtPort.Name = "txtPort";
-            this.txtPort.Size = new System.Drawing.Size(200, 21);
+            this.txtPort.Size = new System.Drawing.Size(118, 21);
             this.txtPort.TabIndex = 10;
             // 
             // txtIP
             // 
             this.txtIP.Location = new System.Drawing.Point(35, 12);
             this.txtIP.Name = "txtIP";
-            this.txtIP.Size = new System.Drawing.Size(200, 21);
+            this.txtIP.Size = new System.Drawing.Size(128, 21);
             this.txtIP.TabIndex = 9;
             // 
             // btnSend
@@ -107,11 +109,30 @@
             this.btnSend.UseVisualStyleBackColor = true;
             this.btnSend.Click += new System.EventHandler(this.btnSend_Click);
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(326, 17);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(69, 12);
+            this.label3.TabIndex = 16;
+            this.label3.Text = "User Name";
+            // 
+            // txtName
+            // 
+            this.txtName.Location = new System.Drawing.Point(401, 12);
+            this.txtName.Name = "txtName";
+            this.txtName.Size = new System.Drawing.Size(118, 21);
+            this.txtName.TabIndex = 17;
+            this.txtName.Text = "User";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(626, 570);
+            this.Controls.Add(this.txtName);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.txtStatus);
             this.Controls.Add(this.txtContent);
             this.Controls.Add(this.label2);
@@ -121,7 +142,7 @@
             this.Controls.Add(this.txtIP);
             this.Controls.Add(this.btnSend);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "ChatClient";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -138,6 +159,8 @@
         private System.Windows.Forms.TextBox txtPort;
         private System.Windows.Forms.TextBox txtIP;
         private System.Windows.Forms.Button btnSend;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox txtName;
     }
 }
 
