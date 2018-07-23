@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2036
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChatN1", "ChatN1\ChatN1.csproj", "{52740848-F97D-475C-8365-BAC7CA6118CF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChatN1C", "ChatN1C\ChatN1C.csproj", "{D7066909-3780-4800-AD21-A5D72F585B87}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChatN1S", "ChatN1S\ChatN1S.csproj", "{BF266DA9-F44A-4BA8-8646-1A366E0CE645}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +13,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{52740848-F97D-475C-8365-BAC7CA6118CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{52740848-F97D-475C-8365-BAC7CA6118CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{52740848-F97D-475C-8365-BAC7CA6118CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{52740848-F97D-475C-8365-BAC7CA6118CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7066909-3780-4800-AD21-A5D72F585B87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7066909-3780-4800-AD21-A5D72F585B87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7066909-3780-4800-AD21-A5D72F585B87}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7066909-3780-4800-AD21-A5D72F585B87}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF266DA9-F44A-4BA8-8646-1A366E0CE645}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF266DA9-F44A-4BA8-8646-1A366E0CE645}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF266DA9-F44A-4BA8-8646-1A366E0CE645}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF266DA9-F44A-4BA8-8646-1A366E0CE645}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
