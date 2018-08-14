@@ -8,3 +8,13 @@ E:\Devuri\workspace\ChatN1\ChatN1C\obj\Debug\ChatN1C.csproj.GenerateResource.Cac
 E:\Devuri\workspace\ChatN1\ChatN1C\obj\Debug\ChatN1C.csproj.CoreCompileInputs.cache
 E:\Devuri\workspace\ChatN1\ChatN1C\obj\Debug\ChatN1C.exe
 E:\Devuri\workspace\ChatN1\ChatN1C\obj\Debug\ChatN1C.pdb
+D:\devuri\workspace\ChatPG\ChatN1C\bin\Debug\ChatN1C.exe.config
+D:\devuri\workspace\ChatPG\ChatN1C\bin\Debug\ChatN1C.exe
+D:\devuri\workspace\ChatPG\ChatN1C\bin\Debug\ChatN1C.pdb
+D:\devuri\workspace\ChatPG\ChatN1C\obj\Debug\ChatN1C.csprojAssemblyReference.cache
+D:\devuri\workspace\ChatPG\ChatN1C\obj\Debug\ChatN1C.Form1.resources
+D:\devuri\workspace\ChatPG\ChatN1C\obj\Debug\ChatN1C.Properties.Resources.resources
+D:\devuri\workspace\ChatPG\ChatN1C\obj\Debug\ChatN1C.csproj.GenerateResource.cache
+D:\devuri\workspace\ChatPG\ChatN1C\obj\Debug\ChatN1C.csproj.CoreCompileInputs.cache
+D:\devuri\workspace\ChatPG\ChatN1C\obj\Debug\ChatN1C.exe
+D:\devuri\workspace\ChatPG\ChatN1C\obj\Debug\ChatN1C.pdb

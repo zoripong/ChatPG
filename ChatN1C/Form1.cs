@@ -53,7 +53,16 @@ namespace ChatN1C
 
             
             int port;
-            
+
+            if (!ValidateIPv4(txtIP.Text))
+            {
+                txtStatus.AppendText("IP가 범위를 벗어났습니다.\n");
+                txtIP.Focus();
+                txtIP.SelectAll();
+                return;
+            }
+
+
             if (!int.TryParse(txtPort.Text, out port))
             {
                 txtStatus.AppendText("포트번호를 확인해주세요.\n");
@@ -62,13 +71,14 @@ namespace ChatN1C
                 return;
             }
 
-            if (port < 0 || port > 65535)
+            if (port < 1024 || port > 65535)
             {
                 txtStatus.AppendText("포트번호가 범위를 벗어났습니다.\n");
                 txtPort.Focus();
                 txtPort.SelectAll();
                 return;
             }
+
 
             try {
                 socket.Connect(txtIP.Text, port);
@@ -85,6 +95,25 @@ namespace ChatN1C
             obj.WorkingSocket = socket;
             socket.BeginReceive(obj.Buffer, 0, obj.BufferSize, 0, DataReceived, obj);
         }
+
+        public bool ValidateIPv4(string ipString)
+        {
+            if (String.IsNullOrWhiteSpace(ipString))
+            {
+                return false;
+            }
+
+            string[] splitValues = ipString.Split('.');
+            if (splitValues.Length != 4)
+            {
+                return false;
+            }
+
+            byte tempForParsing;
+
+            return splitValues.All(r => byte.TryParse(r, out tempForParsing));
+        }
+
         void DataReceived(IAsyncResult ar)
         {
             AsyncObject obj = (AsyncObject)ar.AsyncState;
@@ -145,6 +174,11 @@ namespace ChatN1C
             txtStatus.AppendText("\n");
 
             txtContent.Clear();
+        }
+
+        private void txtStatus_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

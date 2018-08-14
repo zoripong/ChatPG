@@ -42,44 +42,48 @@
             // 
             // txtStatus
             // 
-            this.txtStatus.Location = new System.Drawing.Point(15, 39);
+            this.txtStatus.Location = new System.Drawing.Point(17, 49);
+            this.txtStatus.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtStatus.Multiline = true;
             this.txtStatus.Name = "txtStatus";
             this.txtStatus.ReadOnly = true;
-            this.txtStatus.Size = new System.Drawing.Size(598, 464);
+            this.txtStatus.Size = new System.Drawing.Size(683, 579);
             this.txtStatus.TabIndex = 15;
+            this.txtStatus.TextChanged += new System.EventHandler(this.txtStatus_TextChanged);
             // 
             // txtContent
             // 
-            this.txtContent.Location = new System.Drawing.Point(15, 509);
+            this.txtContent.Location = new System.Drawing.Point(17, 636);
+            this.txtContent.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtContent.Multiline = true;
             this.txtContent.Name = "txtContent";
-            this.txtContent.Size = new System.Drawing.Size(481, 49);
+            this.txtContent.Size = new System.Drawing.Size(549, 60);
             this.txtContent.TabIndex = 14;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(169, 18);
+            this.label2.Location = new System.Drawing.Point(193, 22);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(27, 12);
+            this.label2.Size = new System.Drawing.Size(34, 15);
             this.label2.TabIndex = 13;
             this.label2.Text = "Port";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(13, 18);
+            this.label1.Location = new System.Drawing.Point(15, 22);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(16, 12);
+            this.label1.Size = new System.Drawing.Size(20, 15);
             this.label1.TabIndex = 12;
             this.label1.Text = "IP";
             // 
             // btnConnect
             // 
-            this.btnConnect.Location = new System.Drawing.Point(538, 12);
+            this.btnConnect.Location = new System.Drawing.Point(615, 15);
+            this.btnConnect.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnConnect.Name = "btnConnect";
-            this.btnConnect.Size = new System.Drawing.Size(75, 23);
+            this.btnConnect.Size = new System.Drawing.Size(86, 29);
             this.btnConnect.TabIndex = 11;
             this.btnConnect.Text = "Connect";
             this.btnConnect.UseVisualStyleBackColor = true;
@@ -87,23 +91,26 @@
             // 
             // txtPort
             // 
-            this.txtPort.Location = new System.Drawing.Point(202, 12);
+            this.txtPort.Location = new System.Drawing.Point(231, 15);
+            this.txtPort.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtPort.Name = "txtPort";
-            this.txtPort.Size = new System.Drawing.Size(118, 21);
+            this.txtPort.Size = new System.Drawing.Size(134, 25);
             this.txtPort.TabIndex = 10;
             // 
             // txtIP
             // 
-            this.txtIP.Location = new System.Drawing.Point(35, 12);
+            this.txtIP.Location = new System.Drawing.Point(40, 15);
+            this.txtIP.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtIP.Name = "txtIP";
-            this.txtIP.Size = new System.Drawing.Size(128, 21);
+            this.txtIP.Size = new System.Drawing.Size(146, 25);
             this.txtIP.TabIndex = 9;
             // 
             // btnSend
             // 
-            this.btnSend.Location = new System.Drawing.Point(502, 509);
+            this.btnSend.Location = new System.Drawing.Point(574, 636);
+            this.btnSend.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnSend.Name = "btnSend";
-            this.btnSend.Size = new System.Drawing.Size(111, 49);
+            this.btnSend.Size = new System.Drawing.Size(127, 61);
             this.btnSend.TabIndex = 8;
             this.btnSend.Text = "Send";
             this.btnSend.UseVisualStyleBackColor = true;
@@ -112,25 +119,26 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(326, 17);
+            this.label3.Location = new System.Drawing.Point(373, 21);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(69, 12);
+            this.label3.Size = new System.Drawing.Size(78, 15);
             this.label3.TabIndex = 16;
             this.label3.Text = "User Name";
             // 
             // txtName
             // 
-            this.txtName.Location = new System.Drawing.Point(401, 12);
+            this.txtName.Location = new System.Drawing.Point(458, 15);
+            this.txtName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(118, 21);
+            this.txtName.Size = new System.Drawing.Size(134, 25);
             this.txtName.TabIndex = 17;
             this.txtName.Text = "User";
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(626, 570);
+            this.ClientSize = new System.Drawing.Size(715, 712);
             this.Controls.Add(this.txtName);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtStatus);
@@ -141,6 +149,7 @@
             this.Controls.Add(this.txtPort);
             this.Controls.Add(this.txtIP);
             this.Controls.Add(this.btnSend);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "Form1";
             this.Text = "ChatClient";
             this.Load += new System.EventHandler(this.Form1_Load);

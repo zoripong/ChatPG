@@ -108,13 +108,14 @@ namespace ChatN1S
                 return;
             }
 
-            if (port < 0 || port > 65535)
+            if (port < 1024 || port > 65535)
             {
                 txtStatus.AppendText("포트번호가 범위를 벗어났습니다.\n");
                 txtPort.Focus();
                 txtPort.SelectAll();
                 return;
             }
+
 
             // Open the Socket
             IPEndPoint ep = new IPEndPoint(thisAddress, port); // Param : IP, Port
@@ -133,7 +134,9 @@ namespace ChatN1S
             
         }
 
+
         
+
         void AcceptCallback(IAsyncResult ar)
         {
             
